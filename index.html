@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Studio — Create QR Codes Instantly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-icon">▦</span> QR<span>Studio</span><span class="brand-dot">.</span></a>
+      <div class="nav-links"><a href="#generator">Generator</a><a href="#how-it-works">How it works</a></div>
+      <a class="nav-cta" href="#generator">Create QR <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="eyebrow"><span class="live-dot"></span> SIMPLE. FAST. FREE.</div>
+      <h1>Turn anything into<br><span>a QR code.</span></h1>
+      <p class="hero-description">Share links, text, and ideas in a single scan. Generate a beautiful, ready-to-use QR code in seconds — no sign-up required.</p>
+      <div class="hero-pills"><span>✦ Instant generation</span><span>✓ Free to use</span><span>↓ Easy downloads</span></div>
+    </section>
+
+    <section id="generator" class="generator-section container" aria-label="QR code generator">
+      <div class="generator-card">
+        <div class="input-panel">
+          <div class="panel-kicker">01 / CREATE</div>
+          <h2>Make your QR code</h2>
+          <p class="panel-description">Paste a URL or type any text below. We'll handle the rest.</p>
+          <label for="qrInput">Your link or text</label>
+          <input id="qrInput" type="text" placeholder="https://your-awesome-website.com" autocomplete="off" />
+          <p class="input-hint">Tip: Press Enter to generate instantly.</p>
+          <button id="generateBtn" class="primary-btn" type="button">Generate QR Code <span>↗</span></button>
+          <div class="divider"><span>YOUR ACTIONS</span></div>
+          <div class="action-row"><button id="downloadBtn" class="secondary-btn" type="button">↓ Download PNG</button><button id="clearBtn" class="ghost-btn" type="button">↺ Clear</button></div>
+          <p class="privacy-note">♧ Your content is processed in your browser.</p>
+        </div>
+        <div class="preview-panel">
+          <div class="preview-heading"><span>02 / PREVIEW</span><span class="preview-badge">LIVE PREVIEW</span></div>
+          <div class="preview-surface"><div class="qr-frame"><div id="qrBox">Your QR code will appear here</div></div></div>
+          <p class="preview-caption">Your code, ready to scan and share.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="how-section container">
+      <div class="section-eyebrow">EFFORTLESS BY DESIGN</div>
+      <h2>Three steps. That's it.</h2>
+      <div class="steps"><article><span class="step-num">01</span><h3>Enter your content</h3><p>Paste a link, message, or any text you want to share.</p></article><article><span class="step-num">02</span><h3>Generate instantly</h3><p>Hit generate and watch your QR code appear.</p></article><article><span class="step-num">03</span><h3>Download & share</h3><p>Save your code as a PNG and use it anywhere.</p></article></div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-icon">▦</span> QR<span>Studio</span><span class="brand-dot">.</span></a><span>Made for effortless sharing.</span><span>© 2026 QR Studio</span></div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
